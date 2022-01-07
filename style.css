@@ -21,11 +21,13 @@ body {
   box-shadow: 5px 5px 3px 2px gray;
 }
 .photo {
-  height: 20%;
-  width: 20%;
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
   border-radius: 50%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  position: relative;
+
 }
 .middle {
   display: flex;
@@ -43,7 +45,7 @@ p {
   margin-left: 20px;
   margin-right: 20px;
 }
-.arrow {
+.arrow-next {
   background-color: inherit;
   border: none;
   font-weight: bold;
@@ -51,7 +53,29 @@ p {
   font-size: 36px;
   margin-left: 20px;
 }
-.arrow:hover {
+.arrow-previouse {
+  background-color: inherit;
+  border: none;
+  font-weight: bold;
+  color: rgb(0, 183, 255);
+  font-size: 36px;
+  margin-left: 20px;
+}
+.arrow-random {
+  background-color: inherit;
+  border: none;
+  font-weight: bold;
+  color: rgb(0, 183, 255);
+  font-size: 36px;
+  margin-left: 20px;
+}
+.arrow-next:hover {
+  cursor: pointer;
+}
+.arrow-previouse:hover {
+  cursor: pointer;
+}
+.arrow-random:hover {
   cursor: pointer;
 }
 .btns {
@@ -61,8 +85,15 @@ p {
   margin-top: 0px;
 }
 
-.random{
+.arrow-random{
   padding-top: 10px;
-  font-size: 24px;
+  font-size: 20px;
   padding-bottom: 20px;
+}
+.wrapper{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
